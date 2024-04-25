@@ -1,15 +1,15 @@
-// Complete the Index page component here
-// Use chakra-ui
-import { Button } from "@chakra-ui/react"; // example
-import { FaPlus } from "react-icons/fa"; // example - use react-icons/fa for icons
+import { Box, Text, Image, VStack, Heading } from '@chakra-ui/react';
 
 const Index = () => {
-  // TODO: Create the website here!
   return (
-    <Button>
-      Hello world! <FaPlus />
-    </Button>
-  ); // example
+    <VStack minH="100vh" align="center" justify="center" bg="gray.100">
+      <Box maxW="xl" p={5} bg="white" boxShadow="xl" rounded="md">
+        <Image src="/images/ronald-reagan.jpg" alt="Ronald Reagan" borderRadius="full" boxSize="150px" objectFit="cover" />
+        <Heading as="h1" size="xl" mt={6} mb={2}>Ronald Reagan</Heading>
+        <Text fontSize="lg">Welcome to the official website of Ronald Reagan, the 40th President of the United States. Explore his legacy and contributions to the world.</Text>
+      </Box>
+    </VStack>
+  );
 };
 
 export default Index;
